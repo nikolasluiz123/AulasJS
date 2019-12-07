@@ -10,29 +10,17 @@
 
 <body>
     <script>
-        function getSexoWithIf(sexo){
-            if(sexo === "M" || sexo === "m"){
-                return "Masculino";
-            } else if(sexo === "F" || sexo === "f"){
-                return "Feminino";
-            }
+    var sexo = "M";
+    var idade = 19;
+    
+    if (sexo === "M" && idade >= 18) {
+        console.log("O sexo é masculino e é maior de idade.");
+    }
 
-            return "Outro";
-        }
+    if (sexo === "M" || idade >= 18) {
+        console.log("É do sexo masculino ou é maior de idade.");
+    }
 
-        function getSexoWithSwitch(sexo){
-            switch (sexo) {
-                case "M" || "m":
-                    return "Masculino";
-                case "F" || "f":
-                    return "Feminino";
-                default:
-                    return "Outro";
-            }
-        }
-
-        console.log(getSexoWithIf("M"));
-        console.log(getSexoWithSwitch("M"));
     </script>
 </body>
 
