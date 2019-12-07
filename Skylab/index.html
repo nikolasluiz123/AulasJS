@@ -10,11 +10,29 @@
 
 <body>
     <script>
-        function soma(numero1, numero2){
-            return numero1 + numero2;
+        function getSexoWithIf(sexo){
+            if(sexo === "M" || sexo === "m"){
+                return "Masculino";
+            } else if(sexo === "F" || sexo === "f"){
+                return "Feminino";
+            }
+
+            return "Outro";
         }
 
-        console.log(soma(1, 2));
+        function getSexoWithSwitch(sexo){
+            switch (sexo) {
+                case "M" || "m":
+                    return "Masculino";
+                case "F" || "f":
+                    return "Feminino";
+                default:
+                    return "Outro";
+            }
+        }
+
+        console.log(getSexoWithIf("M"));
+        console.log(getSexoWithSwitch("M"));
     </script>
 </body>
 
