@@ -10,31 +10,26 @@
 
 <body>
     <script>
-        var nome = "Níkolas";
-        nome = 2;
+        var x = 10;
+        var y = 5;
 
-        var idade = 19;
-        var peso = 60.2;
-        var humano = true;
-        var paises = ["Brasil", "China"];
+        x += 3;
+        console.log("Soma 10 + 3: " + x);
 
-        var pessoa = {
-            nome: "Níkolas",
-            idade: 2,
-            peso: 60.2,
-            humano: true,
-            paises: [
-                Brasil = {
-                    nome: "Brasil"
-                },
-                China = {
-                    nome: "China"
-                }
-            ]
-        };
+        x -= 3;
+        console.log("Subtração 13 - 3: " + x);
 
-        console.log("Um país acessado de um array simples: " + paises[1]);
-        console.log("Um país acessado de um array de objetos (países) dentro de um objeto (pessoa): " + pessoa.paises[1].nome);
+        x *= 3;
+        console.log("Multiplicação 10 * 3: " + x);
+
+        x /= 3;
+        console.log("Divisão 30 / 3: " + x);
+
+        x %= 3;
+        console.log("Módulo 10 % 3: " + x);
+
+        x += y;
+        console.log("Soma 1 + 5: " + x);
     </script>
 </body>
 
