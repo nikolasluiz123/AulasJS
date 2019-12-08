@@ -10,19 +10,12 @@
 
 <body>
     <script>
-        function exibirNumerosPares(n1, n2){
-            var numeros = "";
-
-            for (let i = n1; i < n2; i++) {
-                if(i % 2 == 0){
-                    numeros += i + ", ";
-                }
-            }
-
-            console.log(numeros = numeros.substr(0, numeros.lastIndexOf(",")));
+        function temHabilidadeJS(skills) {
+            console.log(skills.indexOf("Javascript") != -1);
         }
 
-        exibirNumerosPares(1, 100);
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        temHabilidadeJS(skills);
     </script>
 </body>
 
