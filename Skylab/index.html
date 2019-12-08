@@ -10,20 +10,19 @@
 
 <body>
     <script>
-        var endereco = {
-            rua: "Rua dos pinheiros",
-            numero: 1293,
-            bairro: "Centro",
-            cidade: "São Paulo",
-            uf: "SP"
-        };
+        function exibirNumerosPares(n1, n2){
+            var numeros = "";
 
-        function exibirEnderecoUsuario(endereco) {
-            console.log(`O usuário mora em ${endereco.cidade} / ${endereco.uf}, no bairro ${endereco.bairro}, na rua "${endereco.rua}" com nº ${endereco.numero}.`);
+            for (let i = n1; i < n2; i++) {
+                if(i % 2 == 0){
+                    numeros += i + ", ";
+                }
+            }
+
+            console.log(numeros = numeros.substr(0, numeros.lastIndexOf(",")));
         }
 
-        exibirEnderecoUsuario(endereco);
-
+        exibirNumerosPares(1, 100);
     </script>
 </body>
 
