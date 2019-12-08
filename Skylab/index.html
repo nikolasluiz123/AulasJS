@@ -9,13 +9,27 @@
 </head>
 
 <body>
-    <button id="btnMover">Botão</button>
+    <div id="app">
+
+    </div>
 
 <script>
-    var element = document.querySelector("button[id=btnMover]");
-    console.log(element);
+    function retornar(){
+        window.location.href = 'http://127.0.0.1:5500/index.html';
+    }
 
-    element.onclick = () => { alert("Aeeeee") };
+    var linkElement = document.createElement('a');
+    linkElement.href = 'https://www.google.com.br';
+    linkElement.addEventListener('onClick', () => { 
+        window.location.href = ""; 
+    });
+
+    var textElement = document.createTextNode('Clique aqui para ir até o Google.');
+    linkElement.append(textElement);
+
+    var divElement = document.querySelector('#app');
+    divElement.appendChild(linkElement);
+
 </script>
 
 </body>
