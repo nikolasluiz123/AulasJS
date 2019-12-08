@@ -5,13 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curso JavaScript</title>
+    <title>Document</title>
 </head>
 
 <body>
     <script>
-        setTimeout(() => console.log("Executando o script depois de 1 segundo."), 1000);
-        setInterval(() => console.log("Executando o script a cada 1 segundo."), 1000);
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        function exibirEnderecoUsuario(endereco) {
+            console.log(`O usuário mora em ${endereco.cidade} / ${endereco.uf}, no bairro ${endereco.bairro}, na rua "${endereco.rua}" com nº ${endereco.numero}.`);
+        }
+
+        exibirEnderecoUsuario(endereco);
+
     </script>
 </body>
 
