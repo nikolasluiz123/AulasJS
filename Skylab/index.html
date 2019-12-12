@@ -12,12 +12,11 @@
     <div class="app">
         <ul id="listaTodos"></ul>
 
-        <input id="todo" type="text" />
-        <button id="adicionarTodo" type="button">Adicionar</button>
+        <input id="todo" type="text" onkeypress="adicionarTodoOnKeyPress(event);" />
+        <button id="adicionarTodo" type="button" onClick="adicionarTodo();">Adicionar</button>
     </div>
 
-<script src="todo.js"></script>
-
+    <script src="todo.js"></script>
 </body>
 
 </html>
