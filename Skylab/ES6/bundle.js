@@ -1,11 +1,23 @@
 "use strict";
 
-var soma = function soma() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  return a + b;
+var usuario = {
+  nome: 'Níkolas',
+  idade: 19,
+  endereco: {
+    cidade: 'Blumenau',
+    estado: 'SC'
+  }
 };
+var nome = usuario.nome,
+    idade = usuario.idade,
+    cidade = usuario.endereco.cidade;
+console.log(nome);
+console.log(idade);
+console.log(cidade);
 
-console.log("Sem par\xE2metro: ".concat(soma()));
-console.log("Com o primeiro par\xE2metro: ".concat(soma(1)));
-console.log("Com os dois par\xE2metros: ".concat(soma(1, 2)));
+function mostrarNome(_ref) {
+  var nome = _ref.nome;
+  console.log(nome);
+}
+
+mostrarNome(usuario);

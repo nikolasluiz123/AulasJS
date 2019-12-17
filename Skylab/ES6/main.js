@@ -1,5 +1,20 @@
-const soma = (a = 0, b = 0) => a + b;
+const usuario = {
+    nome: 'Níkolas',
+    idade: 19,
+    endereco: {
+        cidade: 'Blumenau',
+        estado: 'SC'
+    }
+};
 
-console.log(`Sem parâmetro: ${soma()}`);
-console.log(`Com o primeiro parâmetro: ${soma(1)}`);
-console.log(`Com os dois parâmetros: ${soma(1, 2)}`);
+const { nome, idade, endereco: { cidade } } = usuario;
+
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+
+function mostrarNome({ nome }){
+    console.log(nome);
+}
+
+mostrarNome(usuario);
