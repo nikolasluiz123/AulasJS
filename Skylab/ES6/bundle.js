@@ -1,14 +1,11 @@
 "use strict";
 
-var arr = [1, 3, 4, 5, 6];
-var newArray = arr.map(function (n) {
-  return n * 2;
-});
-
-var teste = function teste() {
-  return {
-    nome: 'Nikolas'
-  };
+var soma = function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  return a + b;
 };
 
-console.log(teste());
+console.log("Sem par\xE2metro: ".concat(soma()));
+console.log("Com o primeiro par\xE2metro: ".concat(soma(1)));
+console.log("Com os dois par\xE2metros: ".concat(soma(1, 2)));
